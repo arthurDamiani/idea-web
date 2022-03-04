@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { t } from 'i18next'
 
 const Title = styled.h1`
   color: red;
@@ -6,5 +7,5 @@ const Title = styled.h1`
 `
 
 export default function Home() {
-  return <Title>My page</Title>
+  return <Title>{t('title')}</Title>
 }
