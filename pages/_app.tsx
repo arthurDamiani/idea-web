@@ -1,5 +1,8 @@
 import type { AppProps } from 'next/app'
-import load from '../utils/loadLocale'
+import load from 'utils/loadLocale'
+import { ThemeProvider } from 'styled-components'
+import { theme } from 'styles/theme'
+import GlobalStyles from 'styles/globalStyles'
 import i18n from 'i18next'
 
 i18n.init({
@@ -16,7 +19,11 @@ i18n.init({
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
-    <Component {...pageProps} />
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+      <GlobalStyles />
+    </ThemeProvider>
+      
   );
 }
 
