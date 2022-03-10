@@ -23,7 +23,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@components/*": ["src/components/*"],
+  }
   },
   "exclude": [
     "node_modules"
