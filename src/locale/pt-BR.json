@@ -4,5 +4,12 @@
   "example": {
     "test1": "teste 1",
     "test2": "teste 2"
+  },
+  "login": {
+    "title": "Login",
+    "email": "E-mail",
+    "password": "Senha",
+    "notRegistered": "Ainda não tem conta ?",
+    "signup": "Clique aqui"
   }
 }
